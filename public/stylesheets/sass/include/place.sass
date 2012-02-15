@@ -1,0 +1,110 @@
+.place
+  :position relative
+  :overflow hidden
+  :font 12px helvetica
+  :color #666666
+  :background-color #ebebf1
+  :background  url('/images/mobile/layout/card_btm_1x2.png') repeat-x 0 100%, url('/images/mobile/layout/card_top_1x2.png') repeat-x 0 0
+  :padding 10px 10px 10px 10px
+  
+  
+  .name
+    :font bold 16px helvetica
+    :color #444444
+    +standard_text_shadow
+    
+  .category
+    :text-transform uppercase
+    :margin 3px 0px
+    
+  // saving stuff
+  .dogear
+    :display none
+  &.saved
+    .dogear
+      :display block
+      :position absolute
+      :right 0
+      :top 0   
+  
+  .small_thumb
+    :margin 0px 0px 10px 0px
+    
+  .detail
+    :line-height 18px
+    :margin 0px 0px 0px 5px
+    :width 100%
+    
+    a
+      :text-decoration none
+      :color #666666
+    
+    img
+      :margin-right 5px
+      :display inline-block
+      :vertical-align middle
+  .back
+    :display none
+  
+#slide_container
+  .front
+    :display none
+  .back
+    :display block
+
+.place_detail
+  :min-width 300px
+  :max-width 600px
+  :overflow hidden
+  .actions
+    :overflow hidden
+    :background #ebebf1 url('/images/mobile/layout/card_btm_1x2.png') repeat-x 0 0
+    :padding-top 10px
+    :clear both
+          
+    .right_btns
+      :float right
+      :width 189px
+    
+  .left_col
+    :float left
+    :width 90px
+    :color #666666
+    :font 10px Helvetica
+    
+    
+  .right_col
+    :margin-left 100px
+    
+  .contact
+    :margin-bottom 10px
+    :color #666666
+    :font 11px/14px Helvetica 
+    
+  .description
+    :color #333333
+    :font 11px Helvetica 
+    :margin-bottom 14px
+    
+    p
+      :margin 0px 0px 5px 0px
+  .map
+    :border 4px solid #fff
+    :margin-bottom 14px
+      
+  .unsave
+    :display none
+.place.saved .place_detail
+  .save
+    :display none
+  .unsave
+    :display block
+  
+    
+.place .like_overlay
+  :display none
+  :background #EBEBF1 url(/images/mobile/layout/card_btm_1x2.png) repeat-x scroll 0 0
+  :padding 10px 0 
+  :background transparent
+  iframe
+    :height 60px

@@ -1,0 +1,142 @@
+@import include/lib/reset.sass
+@import include/lib/_960_grid.sass
+@import include/base.sass
+@import include/ui.sass
+
+@import include/place.sass
+@import include/views/places.sass
+@import include/views/places.application.sass
+@import include/views/static.application.sass
+
+
+@import include/ui.sass
+@import include/place.sass
+
+@import include/views/user_sessions.application.sass
+@import include/views/users.sass
+@import include/views/users.application.sass
+
+html
+  :background-color #ebebf1
+  
+body
+  :background transparent url(/images/layout/grad_top_1x300.png) repeat-x 0 0
+
+a
+  :outline none
+
+#header
+  :background transparent url(/images/layout/bg_header_40x50.png) repeat-x 0 0
+  :border-bottom 1px solid #fdfdfe
+  :height 50px
+  #nav
+    +grid-container
+    img
+      :margin 15px 0 15px 0
+    ul
+      :float right
+      :margin-top 10px
+
+      li
+        :width 100px
+        :height 31px
+        :display block
+        :float left
+        :margin-left 6px
+
+        a
+          :text-indent -31337px
+          :display block
+          :width 100%
+          :height 100%
+          :background-image url('/images/btns/btn_nav_100x31.png')
+          //position relative is needed to work around ie7 bug
+          :position relative
+
+        &#explore
+          a
+            :background-position 0 0
+            &:hover
+              :background-position 0 -32px
+            &.selected
+              :background-position 0 -64px
+
+        &#my_places
+          a
+            :background-position -100px 0
+            &:hover
+              :background-position -100px -32px
+            &.selected
+              :background-position -100px -64px
+
+        &#about
+          a
+            :background-position -200px 0
+            &:hover
+              :background-position -200px -32px
+            &.selected
+              :background-position -200px -64px
+
+#content
+  +grid-container
+  :clear both
+  
+#footer
+  +grid-container
+
+#content .nav_bar
+  :height 40px
+  :border-bottom 1px solid #aaa
+  :border-top 1px solid #f4f4f4
+  :font bold 16px/40px helvetica
+  :text-align center
+  +standard_text_shadow
+  :overflow hidden
+  :color #333
+  a
+    :text-decoration none
+    :color #0066cc
+    &:hover
+      :text-decoration underline
+.lang, .rang, .uang, .dang
+  :background-image url('/images/btns/subnav_arrows_web_12x16.png')
+  :width 12px
+  :margin-right 0 !important
+  :margin-left 0 !important
+.uang
+  +button(16px, right)
+.dang
+  +button(16px, left)
+
+
+#slide_container
+  :position fixed 
+  :left 0
+  :right 0
+  :top 0
+  :bottom 0
+  :display none
+  :background transparent
+  :text-align center
+  #nav
+    :display none
+  .place
+    :text-align left
+    :border 10px solid #222
+    :-webkit-box-shadow 0px 1px 3px #a4a4a4
+    :-moz-box-shadow 0px 1px 3px #a4a4a4
+    :background #EBEBF1
+    :margin-top 80px
+    :display inline-block 
+    // ie7 i-b hack
+    :zoom 1
+    :*display inline
+    
+    
+body.slide
+  #slide_container
+    :display block
+
+#footer
+  :padding 24px 0px 10px 0px
+  :border-top 1px solid #f4f4f4

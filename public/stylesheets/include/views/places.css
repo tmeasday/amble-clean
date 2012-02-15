@@ -1,0 +1,182 @@
+.c_places.v_quickedit {
+  margin: 0px 20px;
+  width: 960px; }
+  .c_places.v_quickedit h1 {
+    font-size: 36px; }
+  .c_places.v_quickedit h2 {
+    font-size: 24px; }
+  .c_places.v_quickedit li {
+    list-style: decimal inside none;
+    float: left;
+    margin-left: 50px; }
+  .c_places.v_quickedit ul {
+    font-size: 48px;
+    overflow: hidden; }
+    .c_places.v_quickedit ul img.active {
+      border: 5px solid yellow; }
+  .c_places.v_quickedit #primary_image {
+    border: 2px solid #ccc;
+    padding: 20px 0px;
+    margin-bottom: 10px; }
+  .c_places.v_quickedit #primary_image_select {
+    display: none; }
+  .c_places.v_quickedit #shortcuts {
+    border: 2px solid #ccc;
+    width: 400px; }
+    .c_places.v_quickedit #shortcuts dl {
+      margin: 20px 0px; }
+    .c_places.v_quickedit #shortcuts dt {
+      float: left;
+      width: 100px; }
+  .c_places.v_quickedit .label {
+    font-weight: bold; }
+  .c_places.v_quickedit .image_source {
+    font-size: 10px; }
+
+.c_places.v_index .uang, .c_places.v_index .dang {
+  float: left;
+  margin: 12px; }
+.c_places.v_index #places .place h2 {
+  white-space: nowrap;
+  overflow: hidden;
+  font: 14px Helvetica;
+  font-weight: bold;
+  color: #444444; }
+.c_places.v_index #places .place .thumb {
+  margin: 0px 0px 10px 0px; }
+.c_places.v_index #places .place .overview img {
+  vertical-align: middle; }
+.c_places.v_index #places .place .front .actions {
+  float: right;
+  width: 108px; }
+  .c_places.v_index #places .place .front .actions .savers, .c_places.v_index #places .place .front .actions .details {
+    width: 44px;
+    height: 44px;
+    float: left;
+    margin-right: 10px; }
+    .c_places.v_index #places .place .front .actions .savers a, .c_places.v_index #places .place .front .actions .details a {
+      width: 100%;
+      height: 100%;
+      display: block;
+      text-indent: -31337px;
+      background-image: url('/images/mobile/btns/btn_star_rarr_44x44.png'); }
+      .c_places.v_index #places .place .front .actions .savers a.unsave, .c_places.v_index #places .place .front .actions .details a.unsave {
+        display: none;
+        background-position: 0 -45px; }
+  .c_places.v_index #places .place .front .actions .details a {
+    background-position: -44px 0px; }
+    .c_places.v_index #places .place .front .actions .details a:active, .c_places.v_index #places .place .front .actions .details a:hover {
+      background-position: -44px -45px; }
+.c_places.v_index #places .place.saved .front .actions .savers .save {
+  display: none; }
+.c_places.v_index #places .place.saved .front .actions .savers .unsave {
+  display: block; }
+.c_places.v_index #places .front {
+  padding-bottom: 5px; }
+.c_places.v_index #current_location {
+  padding: 0px 10px 0px 10px; }
+  .c_places.v_index #current_location #right_arrow {
+    height: 16px;
+    width: 12px;
+    float: right;
+    margin-top: 12px; }
+    .c_places.v_index #current_location #right_arrow a {
+      text-indent: -31337px;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-image: url('/images/mobile/btns/btn_subnav_arrows_12x16.png');
+      background-position: 0 0; }
+      .c_places.v_index #current_location #right_arrow a:active {
+        background-position: 0 -17px; }
+  .c_places.v_index #current_location p a {
+    color: #003399;
+    text-decoration: none; }
+    .c_places.v_index #current_location p a:hover {
+      text-decoration: underline; }
+.c_places.v_index #set_location {
+  text-align: left;
+  padding: 0px 10px 0px 0px; }
+  .c_places.v_index #set_location label {
+    padding-left: 27px; }
+  .c_places.v_index #set_location .locate_txt {
+    float: right;
+    width: 197px;
+    height: 24px;
+    margin: 8px 0px 8px 0px;
+    overflow: hidden; }
+  .c_places.v_index #set_location input[type=submit] {
+    float: left;
+    -webkit-appearance: none;
+    background-image: url('/images/mobile/btns/btn_search_20x22.png');
+    border: 1px solid black;
+    font-size: 0px;
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 20px;
+    border-left: none;
+    text-indent: -31337px;
+    -webkit-border-radius: 0px;
+    -webkit-border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px; }
+  .c_places.v_index #set_location input[type=text] {
+    float: left;
+    outline: none;
+    -webkit-appearance: none;
+    padding: 0px 8px 0px 4px;
+    width: 162px;
+    font: normal 12px/24px helvetica;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e0e0df));
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid black;
+    border-right: none;
+    -webkit-border-radius: 0px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px; }
+    .c_places.v_index #set_location input[type=text]::-webkit-input-placeholder {
+      color: #333333;
+      font-weight: normal; }
+  .c_places.v_index #set_location .placeholder {
+    float: left;
+    margin-left: -170px;
+    width: 170px;
+    line-height: 22px;
+    height: 22px;
+    z-index: 1;
+    position: relative;
+    color: #333333;
+    font-size: 12px;
+    text-shadow: none;
+    font-weight: normal; }
+  .c_places.v_index #set_location .locate_btn {
+    margin: 8px 0px 0px 5px;
+    float: right;
+    width: 24px;
+    height: 24px; }
+    .c_places.v_index #set_location .locate_btn a {
+      background: transparent url('/images/mobile/btns/btn_locate.png') no-repeat 0 0;
+      text-indent: -31337px;
+      display: block;
+      width: 100%;
+      height: 100%; }
+.c_places.v_index #places_filter {
+  text-align: left;
+  padding: 0px 10px 0px 0px; }
+  .c_places.v_index #places_filter label {
+    padding-left: 3px; }
+  .c_places.v_index #places_filter .uang {
+    margin-right: 0; }
+  .c_places.v_index #places_filter select {
+    float: right;
+    -webkit-appearance: none;
+    -webkit-border-radius: 5px;
+    padding-left: 8px;
+    margin: 8px 0px 0px 5px;
+    width: 227px;
+    font: normal 12px/24px helvetica;
+    background-image: url('/images/mobile/btns/btn_select_20x22.png'), -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e0e0df));
+    background-position: 100% 0, 0 0;
+    background-repeat: no-repeat, repeat-x;
+    height: 24px;
+    line-height: 24px; }

@@ -1,0 +1,17 @@
+.c_user_sessions.v_new #content {
+  text-align: center; }
+  .c_user_sessions.v_new #content #connect_to_facebook_form {
+    display: none; }
+  .c_user_sessions.v_new #content #fb_login {
+    line-height: 40px;
+    vertical-align: middle; }
+    .c_user_sessions.v_new #content #fb_login img {
+      vertical-align: middle;
+      display: inline-block;
+      margin: -3px 0px 0px 5px; }
+  .c_user_sessions.v_new #content a {
+    font: 14px helvetica;
+    color: #0066cc;
+    text-decoration: none; }
+    .c_user_sessions.v_new #content a:hover {
+      text-decoration: underline; }

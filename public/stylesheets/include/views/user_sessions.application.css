@@ -1,0 +1,19 @@
+.c_user_sessions.v_new #fb_login {
+  margin: 50px 0 0 0;
+  padding-bottom: 10px;
+  border: none;
+  text-align: center;
+  line-height: 40px;
+  vertical-align: middle; }
+  .c_user_sessions.v_new #fb_login #connect_to_facebook_form {
+    display: none; }
+  .c_user_sessions.v_new #fb_login img {
+    vertical-align: middle;
+    display: inline-block;
+    margin: -3px 0px 0px 5px; }
+.c_user_sessions.v_new #splash {
+  margin: 30px auto;
+  display: block; }
+.c_user_sessions.v_new #footer {
+  padding-top: 100px;
+  border: none; }

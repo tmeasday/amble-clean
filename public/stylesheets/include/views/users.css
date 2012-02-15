@@ -1,0 +1,23 @@
+.c_users.v_my_places .rang {
+  float: right; }
+.c_users.v_my_places .lang {
+  float: left; }
+.c_users.v_my_places .rang, .c_users.v_my_places .lang {
+  margin: 12px; }
+.c_users.v_my_places .place .front > * {
+  margin-left: 95px; }
+.c_users.v_my_places .place .small_thumb {
+  float: left;
+  margin-left: 0; }
+.c_users.v_my_places .place .detail {
+  padding-bottom: 6px; }
+.c_users.v_my_places .no_saved {
+  padding: 14px;
+  font: bold 14px helvetica;
+  color: #666; }
+
+.c_users.v_get_location #content {
+  text-align: center;
+  color: #666; }
+  .c_users.v_get_location #content #splash {
+    margin-bottom: 30px; }
