@@ -1,0 +1,74 @@
+<h1>Quickedit - <%= @place.id %></h1>
+
+<div id="shortcuts">
+  <h2>Keyboard Shortcuts</h2>
+  <dl>
+    <dt>0 to 9</dt>
+    <dd>set specified image number to primary image</dd>
+        
+    <dt>h</dt>
+    <dd>hides current record (i.e. it's crap data)</dd>
+    
+    <dt>e</dt>
+    <dd>edit record; show advanced fields</dd>    
+  </dl>
+</div>
+
+<% form_for(@place, :url => { :action => "quickedit", :id => @place.id }, :html => {:class => 'no-auto-focus'}) do |f| %>
+  <%= f.error_messages %>
+  
+  <p>
+    <div class='label'>Name</div>
+    <div><%= h @place.name %></div>
+  </p>
+  
+  <p>
+    <div class='label'>Phone</div>
+    <div><%= h(@place.phone || 'None') %></div>
+  </p>
+  
+  <p>
+    <div class='label'>Location</div>
+    <div><%= h(@place.location || 'None') %></div>
+  </p>
+  
+  <p>
+    <div class='label'>Description</div>
+    <div><%= truncate(h(@place.description || 'None'), 160) %></div>
+  </p>
+  
+  <p>
+    <% unless @place.webpages.empty? %>
+      <div class='label'>Website</div>    
+      <div><%= h(@place.webpages.first.url || 'None') %></div>
+    <% end %>
+  </p>
+    
+  <p>
+    <div class='label'><%= f.label :user_quality %></div>
+    <%= f.select :user_quality, 0.upto(10).collect { |i| [i.to_s,i]},
+      {:include_blank => 'Not specified'}, {:id => 'user_quality_select'} %>
+  </p>
+  
+  <div id="primary_image">
+    <%= f.label :primary_image_id %><br />
+    
+    <ul>
+      <% @place.images.each_with_index do |img, idx| %>
+        <li><%= image_tag img.image.url(:medium), :id => "place_image#{idx + 1}", 
+              :class => img.id == @place.primary_image_id ? 'active' : '' %>
+            <div class="image_source"><%= truncate(h(img.url), 35) %></div>
+        </li>
+      <% end %>    
+    </ul>
+    
+    <%= f.select :primary_image_id, @place.images.collect { |img| [img.url, img.id]},
+      {:include_blank => 'Not specified'}, {:id => 'primary_image_select'} %>
+  </div>
+    
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Edit', edit_place_path(@place), :id => 'edit' %>

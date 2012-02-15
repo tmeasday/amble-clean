@@ -1,0 +1,12 @@
+<%= init_fb_connect "XFBML", :js => :jquery %>
+
+<div id="fb_login" class="nav_bar">
+  <span>Login with</span> <%= authlogic_facebook_login_button :js => :jquery %>
+</div>
+
+<%= image_tag 'mobile/layout/splash_160x185.png', :id => 'splash' %>
+
+<!-- TODO: make this facebook link work -->
+<% if is_mobile_device? %>
+  <a href="javascript:void(0);" id="login">Login with Facebook »</a>
+<% end %>
