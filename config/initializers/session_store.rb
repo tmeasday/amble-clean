@@ -5,8 +5,8 @@
 # Make sure the secret is at least 30 characters and all random, 
 # no regular words or you'll be exposed to dictionary attacks.
 ActionController::Base.session = {
-  :key         => '_amble-clean_session',
-  :secret      => 'caf07b1c10e2b1f827787ad859e14ed0095d925cd4c5550ebd29e581eec8a6e275efea2f942c38edbeae43a4de2f7dd98ee349ebc45b5a0a8ac0990035d31a6f'
+  :key         => '_amble_session',
+  :secret      => 'b55ed2f69b73d188e1e461fd543f2eb52e3eb63daf279ecd5a2a871a93c18fdb361493d7be814144f13a4688a969019544b59569225a845987e22aa73e6034a0'
 }
 
 # Use the database for sessions instead of the cookie-based default,

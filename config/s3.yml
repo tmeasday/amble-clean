@@ -1,0 +1,15 @@
+common: &common
+  bucket: amble-production-attached-files
+  access_key_id: ENV['S3_KEY']
+  secret_access_key: ENV['S3_SECRET']
+
+development:
+  <<: *common
+  secret_access_key: DISABLED_FOR_WRITE
+
+test:
+  <<: *common
+  secret_access_key: DISABLED_FOR_WRITE
+
+production:
+  <<: *common
