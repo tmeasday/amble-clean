@@ -5,3 +5,24 @@
 #   
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Major.create(:name => 'Daley', :city => cities.first)
+
+categories = [
+              {:name => 'Culture'},
+              {:name => 'Attraction'},
+              {:name => 'Restaurant'},
+              {:name => 'Bar'},
+              {:name => 'Other'}
+             ]
+
+categories.each { |category| Category.find_or_create_by_name(category) }
+
+sources = [
+  {:name => 'Citysearch', :url => 'http://melbourne.citysearch.com/', :icon_filename => 'citysearch.png'},
+  {:name => 'Flickr', :url => 'http://www.flickr.com/', :icon_filename => 'flickr.jpg'},
+  {:name => 'Wikipedia', :url => 'http://wikipedia.org/', :icon_filename => 'wikipedia.jpg'},
+  {:name => 'Art Spaces Gov Data', :url => 'http://data.vic.gov.au/raw_data/arts-spaces-and-places/46'},
+  {:name => 'Licensed Venues Gov Data', :url => 'http://data.vic.gov.au/raw_data/licenced-venues/51'},
+  {:name => 'Tourism Vic Gov Data', :url => 'http://data.vic.gov.au/data_tool/tourism-victoria-atdw-data-set/153'}
+  ]
+  
+sources.each { |source| Source.find_or_create_by_name(source) }
